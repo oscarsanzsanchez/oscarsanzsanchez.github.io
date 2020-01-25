@@ -1,0 +1,12 @@
+::-webkit-scrollbar {
+  width: .3em;
+  // width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $danger;
+}
+
+::-webkit-scrollbar-track {
+  background: $white;
+}
