@@ -1,10 +1,5 @@
 .skills {
-  display: inline-block;
   margin-bottom: 2em;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
 
   &>&__title {
     width: 100%;
@@ -12,6 +7,13 @@
     letter-spacing: .5em;
     display: inline-block;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>h2 {
+      width: 100%;
+    }
   }
 
   &>&__content {
@@ -44,6 +46,7 @@
       }
 
       &__text {
+        font-size: 1.3em;
         margin-left: .5em;
 
         @media (max-width: 460px) {
@@ -53,11 +56,6 @@
 
       @media (min-width: 460px) {
         width: 25%;
-        &:hover {
-          .soft-skill-card__text {
-            font-size: 2em;
-          }
-        }
       }
 
     }
